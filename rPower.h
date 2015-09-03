@@ -14,10 +14,15 @@ namespace  RVR
         RAIL3V3
     };
 
-    // A class that allows control of the a individual power rail (net)
+    // A class that allows control of the an individual power rail (net)
     class PowerRail
     {
-
+    public:
+        int EN_12V; // pin value for enable 12V
+        int EN_5V; // pin value for enable 5V
+        int EN_3V3; // pin value for enable 3V3
+        int EnableRail(RailName railName);
+        int DisableRail(RailName railName);
     };
 
     // A class that manages the power rails for a system and provides power rail objects to users
