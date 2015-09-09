@@ -4,6 +4,7 @@
 
 #include "rPower.h"
 #include <string>
+#include <stdio.h>
 
 namespace RVR
 {
@@ -25,15 +26,15 @@ namespace RVR
         switch (railName)
         {
             case RVR::RAIL12V0:
-                std::printf("Enable 12 volt rail not implemented");
+                printf("Enable 12 volt rail not implemented");
                 //EN_12V
                 break;
             case RVR::RAIL5V0:
-                std::printf("Enable 5 volt rail not implemented");
+                printf("Enable 5 volt rail not implemented");
                 //EN_5V
                 break;
             case RVR::RAIL3V3:
-                std::printf("Enable 3.3 volt rail not implemented");
+                printf("Enable 3.3 volt rail not implemented");
                 //EN_3V3;
                 break;
         }
@@ -45,15 +46,15 @@ namespace RVR
         switch (railName)
         {
             case RVR::RAIL12V0:
-                std::printf("Disable 12 volt rail not implemented");
+                printf("Disable 12 volt rail not implemented");
                 //EN_12V
                 break;
             case RVR::RAIL5V0:
-                std::printf("Disable 5 volt rail not implemented");
+                printf("Disable 5 volt rail not implemented");
                 //EN_5V
                 break;
             case RVR::RAIL3V3:
-                std::printf("Disable 3.3 volt rail not implemented");
+                printf("Disable 3.3 volt rail not implemented");
                 //EN_3V3;
                 break;
         }
