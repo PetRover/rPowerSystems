@@ -4,10 +4,12 @@
 
 #include "rPower.h"
 #include <string>
-#include <stdio.h>
 
 namespace RVR
 {
+    PowerRail *PowerManager::rail12v0 = new PowerRail();
+    PowerRail *PowerManager::rail5v0 = new PowerRail();
+    PowerRail *PowerManager::rail3v3 = new PowerRail();
 
     PowerRail* PowerManager::getRail(RailName railName) {
         switch (railName)
@@ -19,6 +21,7 @@ namespace RVR
             case RVR::RAIL3V3:
                 return rail3v3;
         }
+        return nullptr;
     }
 
     int PowerRail::EnableRail(RailName railName){
